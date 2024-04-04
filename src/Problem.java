@@ -40,4 +40,11 @@ public class Problem {
         return fib(n-1) + fib(n-2);
     }
 
+    public int power(int n, int k){
+        if (k == 1){
+            return n;
+        }
+        return n * power(n, k-1);
+    }
+
 }
