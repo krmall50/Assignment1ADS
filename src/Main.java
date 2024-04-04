@@ -16,5 +16,10 @@ public class Main {
         int n1 = 4;
         double avg = problem.findAvg(arr1, n1);
         System.out.println(avg);
+
+        System.out.println("Problem 3:");
+        System.out.println(problem.isPrime(87));
         }
+
+
 }
