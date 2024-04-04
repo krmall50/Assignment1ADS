@@ -22,6 +22,9 @@ public class Main {
 
         System.out.println("Problem 4:");
         System.out.println(problem.factorial(5));
+
+        System.out.println("Problem 4:");
+        System.out.println(problem.fib(17));
         }
 
 
