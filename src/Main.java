@@ -19,6 +19,9 @@ public class Main {
 
         System.out.println("Problem 3:");
         System.out.println(problem.isPrime(87));
+
+        System.out.println("Problem 4:");
+        System.out.println(problem.factorial(5));
         }
 
 
