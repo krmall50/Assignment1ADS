@@ -4,10 +4,17 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        Problem problemOne = new Problem();
-        int[] arr = {2,9,7,3,4};
-        int n = 5;
-        int min = problemOne.findMin(arr, n);
+        Problem problem = new Problem();
+        System.out.println("Problem 1:");
+        int[] arr = {3,2,4,1};
+        int n = 4;
+        int min = problem.findMin(arr, n);
         System.out.println(min);
+
+        System.out.println("Problem 2:");
+        int[] arr1 = {3,2,4,1};
+        int n1 = 4;
+        double avg = problem.findAvg(arr1, n1);
+        System.out.println(avg);
         }
 }

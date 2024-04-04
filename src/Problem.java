@@ -8,4 +8,14 @@ public class Problem {
         }
         return min;
     }
+
+    public double findAvg(int[] arr, int n) {
+        double avg = 0;
+        for (int i = 0; i<=n-1; i++){
+            avg+=arr[i];
+        }
+        return avg/n;
+    }
+
+
 }
