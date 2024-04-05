@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -28,6 +30,15 @@ public class Main {
 
         System.out.println("Problem 6:");
         System.out.println(problem.power(2,10));
+
+        System.out.println("Problem 7:");
+        int[] arr2 = {1, 4, 6, 2};
+        int start = 0;
+        int end = 4;
+        System.out.println(Arrays.toString(problem.reverse(start, end, arr2)));
+
+        System.out.println("Problem 8:");
+        System.out.println(problem.isAllDigit("123a12"));
         }
 
 

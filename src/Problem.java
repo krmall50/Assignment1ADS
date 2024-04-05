@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Problem {
     public int findMin(int[] arr, int n) {
         int min = arr[0];
@@ -33,18 +35,33 @@ public class Problem {
         return n * factorial(n - 1);
     }
 
-    public int fib(int n){
-        if (n == 0 || n == 1){
+    public int fib(int n) {
+        if (n == 0 || n == 1) {
             return n;
         }
-        return fib(n-1) + fib(n-2);
+        return fib(n - 1) + fib(n - 2);
     }
 
-    public int power(int n, int k){
-        if (k == 1){
+    public int power(int n, int k) {
+        if (k == 1) {
             return n;
         }
-        return n * power(n, k-1);
+        return n * power(n, k - 1);
+    }
+
+    public int[] reverse(int start, int end, int[] arr) {
+        if (start >= end) {
+            return arr;
+        }
+        int temp = arr[start];
+        arr[start] = arr[end-1];
+        arr[end-1] = temp;
+
+        return reverse(start+1, end-1, arr);
+    }
+
+    public boolean isAllDigit(String s){
+        return true;
     }
 
 }
