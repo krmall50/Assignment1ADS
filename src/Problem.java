@@ -60,11 +60,22 @@ public class Problem {
         return reverse(start+1, end-1, arr); // recursively swap elements until base case triggered
     }
 
-    public boolean isAllDigit(String s){
+    public boolean isAllDigit(String s){ // In process...
         if (s.isEmpty()){
             return true;
         }
         return false;
+    }
+
+    public int findBinomialCoefficient(int n, int k){ // In process...
+        return n*k;
+    }
+
+    public int findGCD(int a, int b){
+        if (a == 0){ // Base case, if a == 0, return remainder
+            return b;
+        }
+        return findGCD(b%a, a); // Recursively call function until a == 0;
     }
 
 }
